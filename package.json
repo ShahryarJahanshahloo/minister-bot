@@ -1,0 +1,17 @@
+{
+  "name": "minister-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "jimp": "^0.16.1",
+    "moment": "^2.29.1"
+  }
+}
