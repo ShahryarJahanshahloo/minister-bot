@@ -1,31 +1,28 @@
-const moment = require("moment")
-
 function create_caption(time) {
-    const date = moment()
-    let caption;
-    switch (date.day()) {
+    let caption;  
+    switch (new Date().getDay()) {
         case 0:
-            caption = "یکشنبه";
+            caption = "Sunday";
             break;
         case 1:
-            caption = "دوشنبه";
+            caption = "Monday";
             break;
         case 2:
-            caption = "سه شنبه";
+            caption = "Tuesday";
             break;
         case 3:
-            caption = "چهارشنبه";
+            caption = "Wednesday";
             break;
         case 4:
-            caption = "پنجشنبه";
+            caption = "Thursday";
             break;
         case 5:
-            caption = "جمعه";
+            caption = "Friday";
             break;
         case 6:
-            caption = "شنبه";
+            caption = "Saturday";
     }
-    caption = caption + time
+    caption = caption + "  " + time
     return caption
 }
 
